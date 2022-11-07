@@ -3,7 +3,7 @@ import java.util.*;
 public class Rat_Maize {
     public static void main(String[] args) {
       int n = 4;                                             //The length of the array
-      int[][] a = {{1,0,0,0},{1,1,0,1},{1,1,0,0},{0,1,1,1}}; //Initialize the array for the maize here '1' describes the path & '0' describes the block
+      int[][] a = {{0,0,1,0},{0,1,1,1},{0,1,1,0},{0,1,1,1}}; //Initialize the array for the maize here '1' describes the path & '0' describes the block
       Solution obj = new Solution();                         //The problem is approched in OOPS fashion so create a Solution class
       ArrayList < String > res = obj.findPath(a, n);         //Here use the "findPath" method in the Solution class and pass the maize array and the length "n"
       if (res.size() > 0) {                                  //The below code is used for printing the answer array........:)
